@@ -14,7 +14,7 @@ const Layout = () => {
   }
   return (
     <div>
-      <div className="min-h-screen flex flex-col items-center justify-center">
+      <div className="min-h-screen flex flex-col">
         <Navbar></Navbar>
         <div className="mt-16 flex-grow bg-white text-black">
           <ScrollToTop></ScrollToTop>

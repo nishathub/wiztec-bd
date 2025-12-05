@@ -10,9 +10,9 @@ const PropertyCard = ({
   image_url
 }) => {
   return (
-    <div className="w-full max-w-sm rounded-2xl overflow-hidden shadow-sm text-[#7E8B9C] bg-white border border-gray-200">
+    <div className="w-full max-w-[380px] md:max-w-[430px] rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 text-[#7E8B9C] bg-white">
       {/* Image */}
-      <div className="w-full h-52">
+      <div className="w-full h-52 md:h-[260px]">
         <img
           src={image_url}
           alt={name}
