@@ -4,7 +4,7 @@ import LoginForm from "../components/LoginForm/LoginForm";
 
 const Login = () => {
   const [isManualLogin, setManualLogin] = useState(false);
-  const bgImageURL = "../../src/assets/Images/LoginPage/city-tower.jpg";
+  const bgImageURL = "../../src/assets/Images/LoginPage/city-height.png";
   const AuthButton = ({ onClick, source, altText, providerName }) => {
     return (
       <button
@@ -19,12 +19,14 @@ const Login = () => {
     );
   };
   return (
-    <div className="max-w-7xl w-full mx-auto grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 items-center gap-12 p-4 md:p-0 text-black">
+    <div className="max-w-7xl w-full mx-auto grid grid-cols-1 md:grid-cols-5 items-center gap-12 p-4 md:p-0 text-black">
       {/* Login Box  */}
       <div className="md:col-span-2 flex flex-col items-center gap-4">
         <WizLogo></WizLogo>
         <div className="text-center">
-          <h2 className="text-[24px] md:text-[32px] font-semibold ">Create New Account</h2>
+          <h2 className="text-[24px] md:text-[32px] font-semibold ">
+            Create New Account
+          </h2>
           <p className="text-[14px] md:text-[16px] leading-[150%]">
             Let's login to grab amazing deal
           </p>
@@ -58,8 +60,11 @@ const Login = () => {
       </div>
 
       {/* City Image  */}
-      <div className="hidden md:col-span-2 lg:col-span-3 md:flex items-center justify-center">
-        <img className="w-5/6" src={bgImageURL} alt="city-tower" />
+      <div className="hidden md:col-span-3 md:flex items-center justify-center">
+        <div className="relative w-5/6">
+          <img className="w-full" src={bgImageURL} alt="city-tower" />
+          <p className="absolute top-10 right-16 text-right w-60 lg:w-80 text-white font-semibold">Browse thousands of properties to buy, sell, or rent with trusted agents.</p>
+        </div>
       </div>
     </div>
   );
