@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
+import Navbar from "../components/Navbar/NavBar";
 
 const Layout = () => {
   function ScrollToTop() {
@@ -13,8 +14,9 @@ const Layout = () => {
   }
   return (
     <div>
-      <div className="flex flex-col min-h-screen">
-        <div className="flex-grow">
+      <div className="min-h-screen flex flex-col items-center justify-center">
+        <Navbar></Navbar>
+        <div className="mt-16 flex-grow ">
           <ScrollToTop></ScrollToTop>
           <Outlet></Outlet>
         </div>

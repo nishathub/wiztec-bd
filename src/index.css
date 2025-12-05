@@ -5,3 +5,6 @@
 .primary-color {
     color: #6C0443;
 }
+.active {
+    font-weight: bold;
+}
