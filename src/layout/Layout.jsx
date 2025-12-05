@@ -16,7 +16,7 @@ const Layout = () => {
     <div>
       <div className="min-h-screen flex flex-col items-center justify-center">
         <Navbar></Navbar>
-        <div className="mt-16 flex-grow ">
+        <div className="mt-16 flex-grow bg-white text-black">
           <ScrollToTop></ScrollToTop>
           <Outlet></Outlet>
         </div>
