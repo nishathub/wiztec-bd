@@ -10,7 +10,6 @@ const Navbar = () => {
   const [isMenuActive, setMenuActive] = useState(false);
   const navMenuRef = useRef();
 
-  // hide absolute boxes when click outside
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (navMenuRef.current && !navMenuRef.current.contains(e.target)) {
