@@ -2,8 +2,8 @@
 
 const Login = () => {
     return (
-        <div>
-            
+        <div className="h-screen bg-white">
+            <div></div>
         </div>
     );
 };
