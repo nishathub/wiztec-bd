@@ -10,7 +10,7 @@ const LoginForm = () => {
         <p className="">Or</p>
         <p className="border-t border-[#DFE2E6] flex-grow"></p>
       </div>
-      <form className="space-y-4 lg:space-y-6">
+      <form className="space-y-4 lg:space-y-4">
         <div className="relative">
           <label className="absolute left-4 top-1">
             <p className="text-[12px] text-[#42526D]">Email</p>
@@ -51,7 +51,7 @@ const LoginForm = () => {
           <div className="flex gap-2">
             <div className="form-control">
               <label className="label cursor-pointer">
-                <input type="checkbox" className="checkbox border" />
+                <input type="checkbox" className="checkbox border border-gray-400" />
               </label>
             </div>
             <p className="text-[16px]">Remember me</p>
@@ -60,6 +60,7 @@ const LoginForm = () => {
             Forgot Password?
           </a>
         </div>
+        <button className="btn w-full bg-[#6C0443] hover:bg-[#b0076d] text-white">Login</button>
       </form>
     </div>
   );
