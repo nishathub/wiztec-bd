@@ -31,6 +31,9 @@
 .yarl__icon{
     background-color: black;
 }
+.yarl__navigation_next, .yarl__navigation_prev{
+    display: none;
+}
 @media (max-width: 1024px) {
     .yarl__root {
         width: 100%;
