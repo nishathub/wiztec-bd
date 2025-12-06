@@ -5,6 +5,12 @@
 .primary-color {
     color: #6C0443;
 }
+.alexandria-600 {
+  font-family: "Alexandria", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
 .active {
     font-weight: bold;
 }
