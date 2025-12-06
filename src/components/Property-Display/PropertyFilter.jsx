@@ -1,7 +1,26 @@
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import DualRangeSlider from "./DualRangeSlider";
 
-export default function PropertyFilter({ data, onChange }) {
+const PropertyFilter = () => {
+  const [data, onChange] = useState({
+    budget: { min: 300, max: 670000 },
+    suburbs: [
+      "Eshelby Drive, Cranbrook",
+      "2–6 Eshelby Dr, Cannonvale",
+      "59/3 Eshelby Drive Cannonvale",
+    ],
+    types: ["House", "Land", "Apartment", "Town House", "Villa", "Acreage"],
+    amenities: ["Pet-friendly", "Parking", "Private Pool"],
+
+    selected: {
+      budget: { min: 300, max: 670000 },
+      suburb: [],
+      type: [],
+      amenities: [],
+    },
+  });
+
   const [open, setOpen] = useState({
     budget: true,
     suburb: true,
@@ -9,16 +28,6 @@ export default function PropertyFilter({ data, onChange }) {
     amenities: true,
   });
   const toggle = (key) => setOpen((p) => ({ ...p, [key]: !p[key] }));
-
-  const handleRange = (min, max) => {
-    onChange((prev) => ({
-      ...prev,
-      selected: {
-        ...prev.selected,
-        budget: { min, max },
-      },
-    }));
-  };
 
   return (
     <div className="w-[340px] space-y-4 p-3">
@@ -28,34 +37,31 @@ export default function PropertyFilter({ data, onChange }) {
         isOpen={open.budget}
         onToggle={() => toggle("budget")}
       >
-        <div className="flex flex-col gap-4">
-          <input
-            type="range"
-            min={data.budget.min}
-            max={data.budget.max}
-            value={data.selected.budget.min}
-            onChange={(e) =>
-              handleRange(Number(e.target.value), data.selected.budget.max)
-            }
-          />
-          <input
-            type="range"
-            min={data.budget.min}
-            max={data.budget.max}
-            value={data.selected.budget.max}
-            onChange={(e) =>
-              handleRange(data.selected.budget.min, Number(e.target.value))
-            }
-          />
-          <div className="flex justify-between text-sm">
-            <div>
-              Minimum
-              <br />${data.selected.budget.min}
-            </div>
-            <div>
-              Maximum
-              <br />${data.selected.budget.max}
-            </div>
+        <DualRangeSlider
+          min={data.budget.min}
+          max={data.budget.max}
+          values={data.selected.budget}
+          onChange={(budget) =>
+            onChange((prev) => ({
+              ...prev,
+              selected: { ...prev.selected, budget },
+            }))
+          }
+          color="#6C0443"
+        />
+
+        <div className="grid grid-cols-2 gap-4 text-sm mt-4">
+          <div className="py-2 px-4 border border-gray-200 rounded-lg bg-[#F4F6F8] text-center">
+            <div className="text-[#697483] text-[12px]">Minimum</div>
+            <span className="text-[16px] font-[500] text-black">
+              ${data.selected.budget.min}
+            </span>
+          </div>
+          <div className="py-2 px-4 border border-gray-200 rounded-lg bg-[#F4F6F8] text-center">
+            <div className="text-[#697483] text-[12px]">Maximum</div>
+            <span className="text-[16px] font-[500] text-black">
+              ${data.selected.budget.max}
+            </span>
           </div>
         </div>
       </Box>
@@ -109,7 +115,7 @@ export default function PropertyFilter({ data, onChange }) {
       </Box>
     </div>
   );
-}
+};
 
 const Box = ({ title, isOpen, onToggle, children }) => {
   return (
@@ -126,3 +132,5 @@ const Box = ({ title, isOpen, onToggle, children }) => {
     </div>
   );
 };
+
+export default PropertyFilter;
