@@ -4,13 +4,13 @@ import PropertyFilter from "./PropertyFilter";
 
 const PropertyComponent = () => {
   return (
-    <div className="max-w-7xl w-full mx-auto flex">
+    <div className="max-w-7xl w-full mx-auto flex justify-center">
       {/* Left  */}
       <div className="hidden lg:flex w-[340px]">
         <PropertyFilter></PropertyFilter>
       </div>
       {/* Right  */}
-      <div className=" ">
+      <div className="">
         <PropertyCollection data={data}></PropertyCollection>
       </div>
     </div>

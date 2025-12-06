@@ -30,7 +30,7 @@ const PropertyCollection = ({ data }) => {
   return (
     <div>
       {/* Sort box  */}
-      <div className="p-2 mt-3 md:mx-5 border border-gray-200 rounded-xl bg-white shadow-sm">
+      <div className="p-2 mt-3 mx-5 border border-gray-200 rounded-xl bg-white shadow-sm">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
           {/* Left */}
           <div className="text-left">
