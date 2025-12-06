@@ -6,7 +6,7 @@
     "bedrooms": 4,
     "bathrooms": 4,
     "area_sqft": 2500,
-    "image_url": "../src/assets/Images/property/maple-grove-photo.jpg"
+    "image_url": "https://res.cloudinary.com/dntewbvod/image/upload/v1765034652/tinywow_maple-grove-photo_86490917_dwzpca.jpg"
   },
   {
     "name": "Sunset Towers Eklosbet",
@@ -15,7 +15,7 @@
     "bedrooms": 7,
     "bathrooms": 4,
     "area_sqft": 6500,
-    "image_url": "../src/assets/Images/property/sunset-tower-photo.jpg"
+    "image_url": "https://res.cloudinary.com/dntewbvod/image/upload/v1765034649/sunset-tower-photo-compress_eehzun.jpg"
   },
   {
     "name": "Riverside Retreat",
@@ -24,7 +24,7 @@
     "bedrooms": 4,
     "bathrooms": 3,
     "area_sqft": 3500,
-    "image_url": "../src/assets/Images/property/river-side-photo.jpg"
+    "image_url": "https://res.cloudinary.com/dntewbvod/image/upload/v1765034652/river-side-photo-compress_jyfjkj.jpg"
   },
   {
     "name": "Golden Meadows",
@@ -33,7 +33,7 @@
     "bedrooms": 6,
     "bathrooms": 4,
     "area_sqft": 4500,
-    "image_url": "../src/assets/Images/property/golden-meadows-photo.jpg"
+    "image_url": "https://res.cloudinary.com/dntewbvod/image/upload/v1765034649/tinywow_golden-meadows-photo_86490895_dnsina.jpg"
   },
   {
     "name": "Ocean Sea Breeze",
@@ -42,7 +42,7 @@
     "bedrooms": 8,
     "bathrooms": 5,
     "area_sqft": 9500,
-    "image_url": "../src/assets/Images/property/ocean-sea-breeze-photo.jpg"
+    "image_url": "https://res.cloudinary.com/dntewbvod/image/upload/v1765034650/tinywow_ocean-sea-breeze-photo_86490951_rtseht.jpg"
   },
   {
     "name": "The Urban Nest Lofts",
@@ -51,6 +51,6 @@
     "bedrooms": 6,
     "bathrooms": 4,
     "area_sqft": 5500,
-    "image_url": "../src/assets/Images/property/urban-nest-photo.jpg"
+    "image_url": "https://res.cloudinary.com/dntewbvod/image/upload/v1765034648/urban-nest-photo-compress_anc1fh.jpg"
   }
 ]

@@ -4,7 +4,7 @@ import LoginForm from "../components/LoginForm/LoginForm";
 
 const Login = () => {
   const [isManualLogin, setManualLogin] = useState(false);
-  const bgImageURL = "../../src/assets/Images/LoginPage/city-height.png";
+  const bgImageURL = "https://res.cloudinary.com/dntewbvod/image/upload/v1765033427/city-height_m3kafv.png";
   const AuthButton = ({ onClick, source, altText, providerName }) => {
     return (
       <button
@@ -32,19 +32,19 @@ const Login = () => {
           </p>
         </div>
         <AuthButton
-          source="../../src/assets/Images/LoginPage/google.png"
+          source="https://res.cloudinary.com/dntewbvod/image/upload/v1765033413/google_gjggfc.png"
           altText="google-icon"
           providerName="Google"
         ></AuthButton>
         <AuthButton
-          source="../../src/assets/Images/LoginPage/apple.png"
+          source="https://res.cloudinary.com/dntewbvod/image/upload/v1765033411/apple_nfo1v7.png"
           altText="apple-icon"
           providerName="Apple"
         ></AuthButton>
         {!isManualLogin && (
           <AuthButton
             onClick={() => setManualLogin(true)}
-            source="../../src/assets/Images/LoginPage/Vector-email-phone.png"
+            source="https://res.cloudinary.com/dntewbvod/image/upload/v1765033412/Vector-email-phone_yemj6e.png"
             altText="phone-icon"
             providerName="Email/Phone"
           ></AuthButton>

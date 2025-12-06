@@ -73,7 +73,7 @@ const Navbar = () => {
                 <p>Favourite</p>
               </button>
             </Link>
-            <Link className="hidden lg:inline-block" to={"/login"}>
+            <Link className="hidden lg:inline-block" to={"/auth/login"}>
               <button className="bg-[#6C0443] hover:bg-[#b80771] transition-colors duration-300 text-white font-semibold px-4 py-3 w-[105px] rounded-[100px]">
                 Login
               </button>
