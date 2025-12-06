@@ -3,11 +3,13 @@ import Home from "../Home/Home";
 import Layout from "../layout/Layout";
 import Login from "../pages/Login";
 import AuthLayout from "../layout/AuthLayout";
+import NotFound from "../components/NotFound/NotFound";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
+    errorElement: <NotFound></NotFound>,
     children: [
       {
         path: "/",
