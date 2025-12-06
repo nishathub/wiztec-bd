@@ -22,7 +22,7 @@ const SideNavbar = ({ navMenuRef, isMenuActive, navLinks }) => {
             <p>Favourite</p>
           </button>
         </Link>
-        <Link to={"/login"}>
+        <Link to={"/auth/login"}>
           <button className="bg-[#6C0443] hover:bg-[#b80771] transition-colors duration-300 text-white font-semibold px-4 py-3 w-[105px] rounded-[100px]">
             Login
           </button>
