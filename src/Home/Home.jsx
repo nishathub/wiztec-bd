@@ -1,6 +1,6 @@
-import PropertyCard from "../components/Property-Card/PropertyCard";
 import "./homeStyle.css";
 import data from "../../public/property.json";
+import PropertyCollection from "../components/Property-Display/PropertyCollection";
 
 const Home = () => {
   return (
@@ -9,11 +9,7 @@ const Home = () => {
       <div className="hidden lg:flex w-[340px] p-6 border">left</div>
       {/* Right  */}
       <div className=" border">
-        <div className="grid md:grid-cols-2 gap-6 p-6">
-          {data.map((item, idx) => (
-            <PropertyCard key={idx} {...item}></PropertyCard>
-          ))}
-        </div>
+        <PropertyCollection data={data}></PropertyCollection>
       </div>
     </div>
   );
