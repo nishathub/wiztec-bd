@@ -15,7 +15,7 @@ const SideNavbar = ({ navMenuRef, isMenuActive, navLinks }) => {
         {navLinks}
 
         <Link to={"/wish-list"}>
-          <button className="flex items-center gap-1 text-[#434953]">
+          <button className="flex items-center gap-1 text-[#434953] hover:text-[#6C0443]">
             <p>
               <CiHeart />
             </p>{" "}

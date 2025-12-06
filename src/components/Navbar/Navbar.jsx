@@ -66,7 +66,7 @@ const Navbar = () => {
         {/* RIGHT  */}
         <div className="justify-end flex items-center gap-4">
             <Link className="hidden lg:inline-block" to={"/wish-list"}>
-              <button className="flex items-center gap-2 text-[#434953] text-[16px]">
+              <button className="flex items-center gap-2 text-[#434953] hover:text-[#6C0443] text-[16px]">
                 <p>
                   <CiHeart />
                 </p>{" "}

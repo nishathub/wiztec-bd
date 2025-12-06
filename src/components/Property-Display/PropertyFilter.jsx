@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp, RotateCcw } from "lucide-react";
 import DualRangeSlider from "./DualRangeSlider";
 
 const PropertyFilter = () => {
@@ -31,6 +31,16 @@ const PropertyFilter = () => {
 
   return (
     <div className="w-[340px] space-y-4 p-3">
+      {/* Reset Box */}
+      <div className="border rounded-xl p-3 bg-white shadow-sm flex items-center justify-between">
+        <p className="text-[16px] font-[500]">Property Preference</p>
+        <button className="py-4 px-2 bg-[#F4F6F8] hover:bg-[#d0d0d0] transition-colors duration-300 rounded-lg flex items-center gap-2">
+          <p className="text-[14px] text-[#434953] font-[500] tracking-tight">
+            Reset Filter
+          </p>{" "}
+          <span><RotateCcw size={18}/></span>
+        </button>
+      </div>
       {/* Budget */}
       <Box
         title="Rent Budget"

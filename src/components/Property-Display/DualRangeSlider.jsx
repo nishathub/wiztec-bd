@@ -20,10 +20,7 @@ const DualRangeSlider = ({ min, max, values, onChange, color = "#6C0443" }) => {
 
   return (
     <div className="relative w-full mt-4">
-      {/* Track Background */}
       <div className="w-full h-[6px] bg-gray-300 rounded-full" />
-
-      {/* Highlighted Range */}
       <div
         className="absolute h-[6px] rounded-full top-0"
         style={{
@@ -55,7 +52,6 @@ const DualRangeSlider = ({ min, max, values, onChange, color = "#6C0443" }) => {
         style={{ zIndex: 4 }}
       />
 
-      {/* Thumb Style */}
       <style>{`
         input[type="range"] {
           --thumb-size: 18px;
