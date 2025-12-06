@@ -25,7 +25,7 @@ const Login = () => {
         <WizLogo></WizLogo>
         <div className="text-center">
           <h2 className="text-[24px] md:text-[32px] font-semibold ">
-            Create New Account
+            {isManualLogin? 'Welcome Back' : 'Create New Account'}
           </h2>
           <p className="text-[14px] md:text-[16px] leading-[150%]">
             Let's login to grab amazing deal
