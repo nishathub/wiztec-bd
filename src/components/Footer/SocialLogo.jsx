@@ -18,7 +18,7 @@ const SocialLogo = () => {
           <a
             key={link.label}
             href={link.url}
-            className=" flex items-center justify-center text-white transition duration-300 ease-in-out hover:text-gray-300"
+            className=" flex flex-wrap items-center justify-center text-white transition duration-300 ease-in-out hover:text-gray-300"
           >
 
             {link.hasCircle ? (
