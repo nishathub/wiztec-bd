@@ -1,9 +1,32 @@
 import { motion } from "framer-motion";
 
 const EllipseHeroBanner = () => {
+  const starDot = (className) => {
+    return (
+      <div className={`${className} absolute w-[6px] h-[6px] bg-white rounded-full`}></div>
+    )
+  }
   return (
     <div className="relative w-full flex justify-center items-center min-h-[90vh] bg-[#2A0019] overflow-hidden px-4">
       
+      {/* Blur Effect  */}
+      {/* left  */}
+      <div className="absolute top-[16%] left-[14%] w-72 h-80 bg-[#fff5d2] opacity-40 rounded-full blur-[90px]" />
+      <div className="absolute top-[36%] left-[8%] w-32 h-40 bg-[#99beff] opacity-80 rounded-full blur-[90px]" />
+      {/* Right  */}
+      <div className="absolute top-[2%] right-[8%] w-72 h-80 bg-[#fff5d2] opacity-40 rounded-full blur-[90px]" />
+      <div className="absolute top-[30%] right-[5%] w-72 h-80 bg-[#925853] opacity-40 rounded-full blur-[90px]" />
+      
+      {/* Small Star-like Dots */}
+      {/* Left */}
+      {starDot('top-[15%] left-[10%]')}
+      {starDot('top-[25%] left-[15%]')}
+      {starDot('top-[35%] left-[12%] opacity-40')}
+      {starDot('top-[55%] left-[22%] opacity-40')}
+      {/* Right  */}
+      {starDot('top-[8%] right-[14%]')}
+      {starDot('top-[28%] right-[20%] opacity-60')}
+      {starDot('top-[50%] right-[14%]')}
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl w-full text-center py-12">
