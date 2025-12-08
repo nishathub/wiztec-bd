@@ -1,4 +1,5 @@
 import data from "../../../public/property.json";
+import Pagination from "../Pagination/Pagination";
 import PropertyCollection from "./PropertyCollection";
 import PropertyFilter from "./PropertyFilter";
 
@@ -12,6 +13,7 @@ const PropertyComponent = () => {
       {/* Right  */}
       <div className="">
         <PropertyCollection data={data}></PropertyCollection>
+        <Pagination></Pagination>
       </div>
     </div>
   );
