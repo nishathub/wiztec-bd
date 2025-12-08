@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^1.7.7",
     "daisyui": "^5.5.8",
+    "framer-motion": "^12.23.25",
     "localforage": "^1.10.0",
     "lucide-react": "^0.556.0",
     "match-sorter": "^6.3.4",

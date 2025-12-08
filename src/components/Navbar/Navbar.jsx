@@ -35,7 +35,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className={`bg-white h-16 w-full fixed top-0 z-10`}>
+    <div className={`bg-white h-16 w-full fixed top-0 z-20`}>
       <div className="navbar max-w-7xl mx-auto md:px-4 px-1 flex justify-between items-center h-full my-auto">
         {/* ABSOLUTE MENU  */}
         <SideNavbar
