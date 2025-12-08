@@ -3,7 +3,7 @@ import Home from "../Home/Home";
 import Layout from "../layout/Layout";
 import Login from "../pages/Login";
 import AuthLayout from "../layout/AuthLayout";
-import NotFound from "../components/NotFound/NotFound";
+import NotFound from "../pages/NotFound";
 
 export const router = createBrowserRouter([
   {
