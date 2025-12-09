@@ -2,7 +2,7 @@ import SocialLogo from "./SocialLogo";
 
 const Footer = () => {
   return (
-    <div className="w-full rounded-t-[40px] bg-gradient-to-b from-[#251621] to-[#42233A] px-8">
+    <div className="w-full bg-gradient-to-b from-[#251621] to-[#42233A] text-white px-8">
       <footer className="footer sm:footer-horizontal max-w-7xl mx-auto pt-16 items-start justify-between">
         <nav>
           <h6 className="font-semibold mb-2 text-xl md:text-[28px]">
@@ -36,7 +36,7 @@ const Footer = () => {
           © 2025 Havenix. All rights reserved.
         </p>
       </div>
-      <div className="text-[14vw] md:text-[16vw] pt-16 text-center alexandria-600 leading-[1.2] bg-gradient-to-r from-[#8A7384] via-[#CAC3C3] to-[#CAC3C3] bg-clip-text text-transparent tracking-wider">
+      <div className="text-[14vw] md:text-[16vw] pt-6 md:pt-16 text-center alexandria-600 leading-[1.2] bg-gradient-to-r from-[#8A7384] via-[#CAC3C3] to-[#CAC3C3] bg-clip-text text-transparent tracking-wider">
         <h4>WiztecBD</h4>
       </div>
     </div>

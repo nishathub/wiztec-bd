@@ -66,7 +66,7 @@ const PropertyCollection = ({ data }) => {
         <div className="drawer-content">
           <label
             htmlFor="my-drawer-5"
-            className="lg:hidden drawer-button ml-6 mt-2 btn bg-[#6C0443] hover:bg-[#b80771] transition-colors duration-300"
+            className="lg:hidden drawer-button ml-6 mt-2 btn bg-[#6C0443] hover:bg-[#b80771] text-white transition-colors duration-300"
           >
             <p>Filter</p>{" "}
         <span>
@@ -80,7 +80,7 @@ const PropertyCollection = ({ data }) => {
             aria-label="close sidebar"
             className="drawer-overlay"
           ></label>
-          <div className="menu bg-white min-h-full w-[340px] p-4">
+          <div className="menu mt-12 z-30 bg-white min-h-full w-[340px] p-4">
             <PropertyFilter></PropertyFilter>
           </div>
         </div>

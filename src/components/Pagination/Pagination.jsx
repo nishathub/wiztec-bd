@@ -21,7 +21,6 @@ const Pagination = () => {
     );
 
     const allPages = [...firstSet, ...middleSet, ...lastSet];
-    console.log(allPages)
     // Sort + remove duplicates
     const sorted = [...new Set(allPages)].sort((a, b) => a - b);
 

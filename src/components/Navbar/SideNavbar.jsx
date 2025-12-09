@@ -9,7 +9,7 @@ const SideNavbar = ({ navMenuRef, isMenuActive, navLinks }) => {
         isMenuActive
           ? "opacity-100 translate-x-0 pointer-events-auto"
           : "opacity-0 -translate-x-10 pointer-events-none"
-      } duration-300 top-[60px] left-0 w-[200px] h-[calc(100vh-60px)] bg-white items-start`}
+      } duration-300 top-[60px] left-0 w-[240px] h-[calc(100vh-60px)] bg-white items-start`}
     >
       <div className="flex flex-col gap-3 w-fit">
         {navLinks}
@@ -23,7 +23,7 @@ const SideNavbar = ({ navMenuRef, isMenuActive, navLinks }) => {
           </button>
         </Link>
         <Link to={"/auth/login"}>
-          <button className="bg-[#6C0443] hover:bg-[#b80771] transition-colors duration-300 text-white font-semibold px-4 py-3 w-[105px] rounded-[100px]">
+          <button className="bg-[#6C0443] hover:bg-[#b80771] transition-colors duration-300 text-white font-semibold px-4 py-3 w-fit rounded-md">
             Login Now
           </button>
         </Link>
