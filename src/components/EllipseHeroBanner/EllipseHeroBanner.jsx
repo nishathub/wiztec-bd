@@ -10,7 +10,7 @@ const EllipseHeroBanner = () => {
   };
   const statBox = (top = "", middle = "", bottom = "") => {
     return (
-      <div className="text-white border border-[#3C3C3C] py-8 px-4 rounded-xl">
+      <div className="text-white text-left border border-[#3C3C3C] py-8 px-4 rounded-xl">
         <p className="text-[16px]">{top}</p>
         <h3 className="text-[42px] font-semibold">{middle}</h3>
         <p className="text-[16px]">{bottom}</p>
@@ -26,21 +26,21 @@ const EllipseHeroBanner = () => {
       {/* Middle top  */}
       <div className="absolute -top-[10%] left-[50%] -translate-x-1/2 w-80 h-40 bg-[#fff5d2] opacity-40 rounded-full blur-[90px]" />
       {/* Middle bottom  */}
-      <div className="absolute bottom-[20%] left-[50%] -translate-x-1/2 w-80 h-80 bg-[#fff5d2] opacity-30 rounded-full blur-[130px]" />
+      <div className="absolute bottom-[30%] left-[50%] -translate-x-1/2 w-80 h-80 bg-[#fff5d2] opacity-30 rounded-full blur-[130px]" />
       {/* Right  */}
       <div className="absolute top-[2%] right-[8%] w-72 h-80 bg-[#fff5d2] opacity-40 rounded-full blur-[90px]" />
       <div className="absolute top-[30%] right-[5%] w-72 h-80 bg-[#925853] opacity-40 rounded-full blur-[90px]" />
 
       {/* Small Star-like Dots */}
       {/* Left */}
-      {starDot("top-[15%] left-[10%]")}
-      {starDot("top-[25%] left-[15%]")}
-      {starDot("top-[35%] left-[12%] opacity-40")}
-      {starDot("top-[55%] left-[22%] opacity-40")}
+      {starDot("top-[12%] left-[10%]")}
+      {starDot("top-[20%] left-[15%]")}
+      {starDot("top-[30%] left-[12%] opacity-40")}
+      {starDot("top-[45%] left-[22%] opacity-40")}
       {/* Right  */}
       {starDot("top-[8%] right-[14%]")}
-      {starDot("top-[28%] right-[20%] opacity-60")}
-      {starDot("top-[50%] right-[14%]")}
+      {starDot("top-[22%] right-[20%] opacity-80")}
+      {starDot("top-[45%] right-[14%]")}
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl w-full text-center py-12">
@@ -49,7 +49,7 @@ const EllipseHeroBanner = () => {
             BUILD FOR YOU
           </p>
 
-          <h2 className="mt-2 font-extrabold text-4xl sm:text-5xl md:text-7xl">
+          <h2 className="mt-6 font-extrabold text-4xl sm:text-5xl md:text-7xl">
             <span className="bg-gradient-to-r from-white to-[#A5C5DD] bg-clip-text text-transparent">
               Built for Creators.
             </span>
@@ -59,7 +59,7 @@ const EllipseHeroBanner = () => {
             </span>
           </h2>
 
-          <p className="text-white mt-4 text-sm sm:text-[20px] sm:leading-[150%]">
+          <p className="text-white mt-6 text-sm sm:text-[20px] sm:leading-[150%]">
             Create and sell courses, consulting services, and communities — with
             Zero marketing cost and a built-in sales network.
           </p>
@@ -78,7 +78,7 @@ const EllipseHeroBanner = () => {
               </span>
             </button>
           </div>
-          <p className="text-[#DEDEDE] text-xs mt-2">
+          <p className="text-[#DEDEDE] text-xs mt-4">
             By proceeding you agree to our Platform terms & Privacy Notice
           </p>
         </div>
@@ -116,7 +116,7 @@ const EllipseHeroBanner = () => {
           </div>
 
           {/* Marquee */}
-          <div className="mt-10 bg-[#FFF3D8] overflow-hidden whitespace-nowrap border-t border-white/10 py-3">
+          <div className="mt-10 bg-[#FFF3D8] overflow-hidden whitespace-nowrap py-3">
             <motion.div
               animate={{ x: [0, -800] }}
               transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
