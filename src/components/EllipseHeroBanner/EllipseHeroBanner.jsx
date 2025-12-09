@@ -23,20 +23,21 @@ const EllipseHeroBanner = () => {
 
   return (
     <div className="relative w-full flex justify-center items-center min-h-[80vh] sm:min-h-[90vh] bg-[#2A0019] overflow-hidden px-4 sm:px-6">
+      {/* Blur Left  */}
       <div className="absolute top-[20%] left-[10%] w-40 h-40 sm:w-60 sm:h-72 bg-[#fff5d2] opacity-40 rounded-full blur-[70px] sm:blur-[90px]" />
       <div className="absolute top-[40%] left-[6%] w-20 h-28 sm:w-28 sm:h-40 bg-[#99beff] opacity-80 rounded-full blur-[70px]" />
-
+      {/* Blur Middle  */}
       <div className="absolute -top-[20%] sm:-top-[10%] left-1/2 -translate-x-1/2 w-60 h-28 sm:w-80 sm:h-40 bg-[#fff5d2] opacity-40 rounded-full blur-[90px]" />
       <div className="absolute bottom-[20%] left-1/2 -translate-x-1/2 w-60 h-60 sm:w-80 sm:h-80 bg-[#fff5d2] opacity-30 rounded-full blur-[100px] sm:blur-[130px]" />
-
+      {/* Blur Right  */}
       <div className="absolute top-[4%] right-[6%] w-48 h-52 sm:w-60 sm:h-72 bg-[#fff5d2] opacity-40 rounded-full blur-[80px]" />
       <div className="absolute top-[26%] right-[4%] w-40 h-48 sm:w-60 sm:h-72 bg-[#925853] opacity-40 rounded-full blur-[80px]" />
-
+      {/* Left  */}
       {starDot("top-[10%] left-[8%]")}
       {starDot("top-[2%] md:top-[18%] left-[14%]")}
       {starDot("hidden md:block top-[30%] left-[10%] opacity-40")}
       {starDot("hidden md:block top-[44%] left-[20%] opacity-40")}
-
+      {/* Right  */}
       {starDot("top-[6%] right-[12%]")}
       {starDot("top-[22%] right-[18%] opacity-80")}
       {starDot("hidden md:block top-[44%] right-[12%]")}

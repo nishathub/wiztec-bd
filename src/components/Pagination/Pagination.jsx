@@ -47,7 +47,7 @@ const Pagination = () => {
   };
 
   return (
-    <div className="w-full flex flex-wrap items-center justify-between py-10">
+    <div className="w-full flex flex-wrap items-center justify-between gap-2 py-6 md:py-10 px-4 md:px-0">
 
       {/* Prev Button */}
       <button
